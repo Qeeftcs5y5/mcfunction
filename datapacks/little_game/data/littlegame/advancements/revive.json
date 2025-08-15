@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "survivor_died": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": {
+          "tags": ["infector"]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "littlegame:infector/revive"
+  }
+}

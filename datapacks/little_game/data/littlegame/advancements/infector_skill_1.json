@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "launch_firework": {
+      "trigger": "minecraft:firework_rocket_launched",
+        "conditions": {"player":{"tags":["infector"]}}
+    }
+  },
+  "rewards": {
+    "function": "littlegame:infector/invisible"
+  }
+}
