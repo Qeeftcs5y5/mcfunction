@@ -1,6 +1,6 @@
 #飞行过远
-scoreboard players add @s lg_fly_times 1
-execute as @s if score @s lg_fly_times matches 115 run function littlegame:survivor/gun/die
+scoreboard players add @s fly_times 1
+execute as @s if score @s fly_times matches 115 run function littlegame:survivor/gun/die
 #撞到方块
 execute as @s at @s unless block ~ ~ ~ air run \
 execute as @s at @s unless block ~ ~ ~ dead_bush run \

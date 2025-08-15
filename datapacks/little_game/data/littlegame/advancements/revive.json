@@ -3,8 +3,13 @@
     "survivor_died": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
-        "player": {
-          "tags": ["infector"]
+        "entity_score": {
+          "entuty": "this",
+          "scores": {
+            "survivor": {
+              "min": 1
+            }            
+          }
         }
       }
     }

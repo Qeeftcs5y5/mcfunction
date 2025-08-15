@@ -1,17 +1,17 @@
 #显示
-scoreboard players reset PreparationRemainedTime lg_data
-scoreboard players set InfectionRemainedTime lg_data 180
-scoreboard players set game_tick lg_hidden_data 0
+scoreboard players reset PreparationRemainedTime data
+scoreboard players set InfectionRemainedTime data 180
+scoreboard players set game_tick hidden_data 0
 title @a[tag=little_game_player] title {"text": "Infection Phase","color":"#23f7e5"} 
 #二阶段
-scoreboard players set game_phase lg_hidden_data 2
+scoreboard players set game_phase hidden_data 2
 #随机分配生化母体
 #————————————————————————————————————
 scoreboard players set @a infector 0
 #当人数小于7时的感染者分配
 scoreboard players set @r[scores={infector=0}] infector 1
 #当人数大于7时的感染者分配
-execute if score PlayerAmount lg_data matches 8..10 run \
+execute if score PlayerAmount data matches 8..10 run \
 scoreboard players set @r[scores={infector=0}] infector 1
 scoreboard players set @a[scores={infector=0}] survivor 1
 #幸存者

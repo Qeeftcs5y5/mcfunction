@@ -4,4 +4,4 @@ item replace entity @s container.0 with carrot_on_a_stick[max_stack_size=30,!max
 item replace entity @s container.1 with warped_fungus_on_a_stick[item_name=\
 '{"text":"RELOAD","color":"light_purple","bold":true,"extra":[{"text":"right-click to reload"}]}'] \
 1
-scoreboard players reset @s lg_reload_time1
+scoreboard players reset @s reload_time1

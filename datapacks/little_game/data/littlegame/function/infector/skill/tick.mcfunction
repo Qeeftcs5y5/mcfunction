@@ -1,7 +1,17 @@
-execute as @a[scores={invisible=1}] at @s run particle dust{color:[0.0,0.3,0.0],scale:4.0} ~ ~1 ~ 0.4 0.7 0.4 1 1
-execute as @a[scores={lg_reload_time1=1..,infector=1}] run scoreboard players remove @s lg_reload_time1 1
+execute as @a[scores={firework_use=1..}] at @s run function littlegame:infector/skill/invisible
+
+execute as @a[scores={ender_eye_use=1..}] at @s run function littlegame:infector/skill/glowing
 
 
 
-execute as @a[scores={lg_reload_time1=700,infector=1}] run scoreboard players reset @s invisible
-execute as @a[scores={lg_reload_time1=0,infector=1}] run function littlegame:infector/skill/reload_i
+
+
+
+#reload
+execute as @a[scores={reload_time1=1360..,infector=1}] at @s run particle dust{color:[0.0,0.3,0.0],scale:4.0} ~ ~1 ~ 0.4 0.7 0.4 1 1
+execute as @a[scores={reload_time1=1..,infector=1}] run scoreboard players remove @s reload_time1 1
+execute as @a[scores={reload_time1=0,infector=1}] run function littlegame:infector/skill/reload_i
+
+
+execute as @a[scores={reload_time2=1..,infector=1}] run scoreboard players remove @s reload_time1 1
+execute as @a[scores={reload_time2=0,infector=1}] run function littlegame:infector/skill/reload_i
