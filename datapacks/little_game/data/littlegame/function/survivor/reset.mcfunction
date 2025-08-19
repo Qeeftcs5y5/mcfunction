@@ -1,8 +1,11 @@
+clear @s
+effect clear @s
 team join survivor
 team leave infector
 scoreboard players set @s survivor 1
 scoreboard players reset @s infector
 attribute @s minecraft:generic.max_health base set 20
+attribute @s player.entity_interaction_range base set 3
 attribute @s minecraft:generic.movement_speed base set 0.1
 attribute @s minecraft:generic.attack_damage base set 1
 

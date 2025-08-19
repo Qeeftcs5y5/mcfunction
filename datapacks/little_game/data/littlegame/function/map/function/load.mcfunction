@@ -22,10 +22,13 @@ scoreboard objectives add ender_eye_use minecraft.used:minecraft.ender_eye
 
 
 
+
 #value
 scoreboard players set MinimumPlayer data 5
 scoreboard players set game_tick hidden_data 0
 scoreboard players set game_phase hidden_data 0
+scoreboard players set orainal_infector_amount hidden_data 0
+scoreboard players set PlayerAmount data 0
 #rule
 gamerule doImmediateRespawn true
 gamerule fallDamage false

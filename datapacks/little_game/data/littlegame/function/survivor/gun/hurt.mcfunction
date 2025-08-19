@@ -1,3 +1,3 @@
-damage @p 2 magic
+damage @p 3 magic
 function littlegame:survivor/gun/die
 
