@@ -14,7 +14,7 @@ scoreboard objectives add rod_use minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rod_use2 minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add firework_use minecraft.used:minecraft.firework_rocket
 scoreboard objectives add ender_eye_use minecraft.used:minecraft.ender_eye
-
+scoreboard objectives add die deathCount
 
 
 
@@ -24,11 +24,16 @@ scoreboard objectives add ender_eye_use minecraft.used:minecraft.ender_eye
 
 
 #value
-scoreboard players set MinimumPlayer data 5
 scoreboard players set game_tick hidden_data 0
 scoreboard players set game_phase hidden_data 0
-scoreboard players set orainal_infector_amount hidden_data 0
 scoreboard players set PlayerAmount data 0
+#可自定义值
+scoreboard players set MinimumPlayer data 5
+#infector amount
+scoreboard players set infector_amount hidden_data 0
+#infection time
+scoreboard players set infection_time hidden_data 180
+
 #rule
 gamerule doImmediateRespawn true
 gamerule fallDamage false

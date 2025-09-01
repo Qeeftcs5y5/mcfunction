@@ -1,0 +1,9 @@
+Phase0(waiting for player)
+Phase1(tp to map and 10 second prepareation)
+Phase2(formal game)
+phase3(game end)
+
+difine
+player amount
+infector amount
+infection time

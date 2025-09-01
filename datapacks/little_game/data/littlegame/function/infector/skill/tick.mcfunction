@@ -17,3 +17,5 @@ execute as @a[scores={reload_time1=1360..,infector=1}] at @s run particle dust{c
 
 execute as @a[scores={reload_time1=0,infector=1}] run function littlegame:infector/skill/reload_i
 execute as @a[scores={reload_time2=0,infector=1}] run function littlegame:infector/skill/reload_i
+
+#follow_compass

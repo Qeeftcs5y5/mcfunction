@@ -1,3 +1,4 @@
+#(into P_3)
 title @a title {"text":"SURVIVORS WIN!","color":"light_purple","bold":true}
 title @a subtitle {"text":"All infectors failed to spread the virus.","color":"gray"}
 playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1
